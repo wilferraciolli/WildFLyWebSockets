@@ -41,6 +41,9 @@ public class WebSocketServer {
     @OnOpen
     public void myOnOpen(final Session session) {
         System.out.println("WebSocket opened: " + session.getId());
+        System.out.println("WebSocket session details: " + session.getRequestURI());
+        System.out.println("WebSocket session details: " + session.getUserProperties());
+        System.out.println("WebSocket session details: " + session.getUserPrincipal());
     }
 
     /**
